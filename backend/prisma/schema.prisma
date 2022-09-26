@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Shortener {
+  id        Int      @id @default(autoincrement())
+  userid    String   
+  link      String   
+  linkid    String   
+  counter   Int @default(0)
+  createdAt DateTime @default(now())
+}

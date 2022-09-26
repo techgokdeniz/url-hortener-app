@@ -4,18 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "ts-node-dev ./src/index.ts",
-    "start": "tsc && node ./lib/index.js"
+    "start:dev": "ts-node-dev --quiet ./src/index.ts",
+    "start": "tsc && node ./src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.14",
+    "@types/morgan": "^1.9.3",
     "@types/node": "^18.7.18",
+    "@types/randomstring": "^1.1.8",
+    "morgan": "^1.10.0",
+    "prisma": "^4.3.1",
     "ts-node-dev": "^2.0.0"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "@prisma/client": "^4.3.1",
+    "@types/compression": "^1.7.2",
+    "@types/cors": "^2.8.12",
+    "@types/helmet": "^4.0.0",
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "helmet": "^6.0.0",
+    "randomstring": "^1.2.2"
   }
 }
